@@ -1,8 +1,8 @@
 ---
 title: lesson 1
-date: september 30th 2022
+date: 2022-09-29 12:00:00 -500
 categories: [lesson 1, Git, Github,Marist]
-tags: [lesson 1,git,github]
+tags: [lessons,git,github]
 --- 
 
 
