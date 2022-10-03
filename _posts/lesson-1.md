@@ -1,0 +1,28 @@
+---
+title: lesson 1
+date: september 30th 2022
+categories: [lesson 1, Git, Github,Marist]
+tags: [lesson 1,git,github]
+--- 
+
+
+# Welcome to lesson 1
+
+In this lesson 1 we took a dive into Git and github basically learning the difference between both of these two topics and how exactly to use it to the best of our abilities. 
+Git is an open-source, version control tool 
+
+GitHub is a website that allows you to centralize your Git history in one place. Thus, allowing you to easily share the code with remote developers. Additionally, GitHub has an amazing UI (user interface) which makes working with Git much easier.
+ 
+ ## Definitions;
+* git: an open source, distributed version-control system
+* GitHub: a platform for hosting and collaborating on Git repositories
+* commit: a Git object, a snapshot of your entire repository compressed into a SHA
+* branch: a lightweight movable pointer to a commit
+* clone: a local version of a repository, including all commits and branches
+* remote: a common repository on GitHub that all team member use to exchange their changes
+* fork: a copy of a repository on GitHub owned by a different user
+* pull request: a place to compare and discuss the differences introduced on a branch with reviews, comments, integrated tests, and more
+
+## Photos
+
+![img-description](githubimage.png)
