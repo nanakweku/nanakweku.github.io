@@ -13,7 +13,7 @@ baseurl: ''
 lang: en
 
 # Additional parameters for datetime localization, optional. › https://github.com/iamkun/dayjs/tree/dev/src/locale
-prefer_datetime_locale:
+#prefer_datetime_locale: 
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: America/New york
@@ -23,7 +23,7 @@ timezone: America/New york
 
 title: Nana Kweku's blog                          # the main title
 
-tagline: Student, hobies- basketball and Soccer  # it will display as the sub-title
+tagline: "Student, hobies, basketball and Soccer"  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A blog i want to put out there to basically showcase myself and what i want to show to everyone
