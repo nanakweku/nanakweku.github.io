@@ -1,8 +1,9 @@
 ---
 title: lesson 1
 date: 2022-09-29 12:00:00 -500
-categories: [lesson 1, Git, Github,Marist]
+categories: [lesson 1, Github]
 tags: [lessons,git,github]
+layout: "post"
 --- 
 
 
@@ -25,4 +26,4 @@ GitHub is a website that allows you to centralize your Git history in one place.
 
 ## Photos
 
-![img-description](githubimage.png)
+![img-description](https://github.com/nanakweku/nanakweku.github.io/blob/main/githubimage.png?raw=true)
