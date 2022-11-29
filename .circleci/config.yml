@@ -1,14 +1,37 @@
+# Use the latest 2.1 version of CircleCI pipeline process engine.
+# See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
+# Define a job to be invoked later in a workflow.
+# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-  hello-job:
-    macos:
-      xcode: 13.4.1
+  build:
+    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
+    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+    docker:
+      - image: cimg/ruby:3.1.2
+    # Add steps to the job
+    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
-      - checkout # check out the code in the project directory
-      - run: echo "hello world" # run the `echo` command
+      - checkout
+      - run: ruby --version
 
+  deploy:
+    machine:
+      image: ubuntu-2004:current
+    resource_class: medium
+    steps:
+       - add_ssh_keys:
+          fingerprints:
+            - "96:70:5a:cb:fc:29:8b:86:b4:eb:54:17:0d:5c:08:c3"
+       - run:
+            name: Deploy Over SSH
+            command: |
+              ssh -o StrictHostKeyChecking=no circleci@148.100.78.97 "sudo touch /tmp/testing.txt"
+# Invoke jobs via workflows
+# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  my-workflow:
-    jobs:
-      - hello-job
+    build-and-deploy:
+      jobs:
+          # - build
+          - deploy
